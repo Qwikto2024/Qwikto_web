@@ -1,0 +1,136 @@
+.navbar {
+    background-color: white;
+    border-radius: 9999px; /* Fully rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 0.75rem 2rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  .logo{
+    margin-left: 20px;
+  }
+  .logo img{
+    width: 150px;
+    height: 50px;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: #4a3f47; 
+    list-style-type: none; 
+  }
+  
+  .allLinks {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .allLinks li {
+    margin: 5px 15px;
+    list-style: none;
+  }
+
+  .allLinks li a:hover{
+    color: rgb(236, 100, 75);
+    text-decoration: underline;
+  }
+  
+  .toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 20px;
+  }
+  
+  .toggle div {
+    width: 25px;
+    height: 4px;
+    background-color: #333;
+  }
+  
+
+  .dropBox {
+    display: none;
+  }
+  
+  .dropBoxOpen {
+    display: block;
+    position: fixed;
+    top: 70px;
+    z-index: 99999;
+    
+  }
+  .dropBoxClosed{
+    display: none;
+
+  }
+  
+  .dropdownMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    z-index: 99999;
+    padding: 10px;
+    background-color:rgb(236, 100, 75) ;
+    margin: 10px;
+    position: fixed;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+}
+.dropdownMenu a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.dropdownMenu li{
+
+      list-style: none;
+  }
+
+  .rightPart{
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers navbar links */
+    align-items: center;
+    gap: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    .allLinks {
+      margin-right: 0px;
+    }
+    .allLinks li {
+      margin: 5px 10px;
+    }
+    
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .toggle {
+      display: flex;
+    }
+    .allLinks {
+      display: none;
+    }
+
+    .logo img{
+      width: 100px;
+      height: 30px;
+    }
+    
+  }
+
+  
+  
